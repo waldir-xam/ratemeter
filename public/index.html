@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ratemeter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-slate-700 text-white max-w-4xl border-2 border-green-300">
+    <div class="border-r-emerald-500">
+      <h1 class="text-3xl font-bold">Ratemeter</h1>
+
+      <div class="flex flex-col w-4/12 gap-2">
+        <label class="" for="nombre">Ingrese su nombre:</label>
+        <input class="rounded-md text-gray-700" type="text" id="nombreInput" />
+        <button
+          class="bg-blue-600 px-4 py-1 rounded-md"
+          onclick="generarPorcentaje()"
+        >
+          Generar Porcentaje
+        </button>
+      </div>
+      <p id="resultado"></p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
